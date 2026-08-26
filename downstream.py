@@ -134,8 +134,8 @@ def path_mean_mode(dataset_cfg, mask_idx):
 # Skenario yang dibandingkan: tiap skenario punya fungsi path builder sendiri,
 # karena struktur foldernya berbeda-beda (bukan cuma beda nama file).
 SCENARIOS = {
-    "diffputer": path_diffputer,   # proposed method
-    # "mrmd": path_mrmd,             # baseline 1
+    # "diffputer": path_diffputer,   # proposed method
+    "mrmd": path_mrmd,             # baseline 1
     # "mean_mode": path_mean_mode,   # baseline 2
 }
 
