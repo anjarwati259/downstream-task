@@ -60,8 +60,18 @@ from sklearn.metrics import (
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 
-# Folder root project (folder "RESULT"). Default: sama dengan lokasi script.
-PROJECT_ROOT = SCRIPT_DIR
+# ------------------------------------------------------------
+# OVERRIDE MANUAL (opsional).
+# Biarkan None kalau script ditaruh LANGSUNG DI DALAM folder "RESULT"
+# (auto-detect dari lokasi script -> cocok untuk komputer lokal).
+#
+# Isi manual kalau folder data terpisah dari lokasi script, misal di
+# Kaggle/Colab dimana dataset di-mount di path lain, contoh:
+#   MANUAL_PROJECT_ROOT = "/kaggle/input/nama-dataset-kamu/RESULT"
+# ------------------------------------------------------------
+MANUAL_PROJECT_ROOT = None   # <-- isi path folder "RESULT" di sini kalau perlu
+
+PROJECT_ROOT = Path(MANUAL_PROJECT_ROOT) if MANUAL_PROJECT_ROOT else SCRIPT_DIR
 
 # Folder utama tempat file CSV hasil imputasi berada, per dataset.
 # Struktur: {RESULT_BASE_DIR}/{DATASET_FOLDER}/MCAR/60/CSV/...
