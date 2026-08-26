@@ -26,6 +26,7 @@ Semua hasil (CV & test, per repetisi + ringkasan rata-rata) disimpan ke:
 import os
 import json
 import traceback
+from pathlib import Path
 from datetime import datetime
 
 import numpy as np
@@ -46,19 +47,35 @@ from sklearn.metrics import (
 # 1. KONFIGURASI GLOBAL
 # ============================================================
 
+# ------------------------------------------------------------
+# PATH PORTABLE — otomatis relatif terhadap lokasi script ini
+# (PROJECT_ROOT), supaya script bisa dijalankan di komputer manapun
+# tanpa edit path absolut (D:\..., C:\..., dst).
+#
+# SYARAT: taruh file script ini LANGSUNG DI DALAM folder "RESULT"
+# (folder yang isinya ADULT/, SHOPPERS/, baselines/, datasets/, dst).
+# Kalau lokasi script berbeda dari folder RESULT, ubah PROJECT_ROOT
+# di bawah ini secara manual.
+# ------------------------------------------------------------
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+
+# Folder root project (folder "RESULT"). Default: sama dengan lokasi script.
+PROJECT_ROOT = SCRIPT_DIR
+
 # Folder utama tempat file CSV hasil imputasi berada, per dataset.
-# Struktur: {RESULT_BASE_DIR}\{DATASET_FOLDER}\MCAR\60\CSV\...
-RESULT_BASE_DIR = r"D:\KULIAH\RISET\PROGRAM\RESULT"
+# Struktur: {RESULT_BASE_DIR}/{DATASET_FOLDER}/MCAR/60/CSV/...
+RESULT_BASE_DIR = PROJECT_ROOT
 
 # Folder utama tempat baseline mean/modus (hyperimpute) berada.
-# Struktur: {MEAN_MODE_BASE_DIR}\{dataset_name}\mask_{i}\mean_mode_train.csv
-MEAN_MODE_BASE_DIR = r"D:\KULIAH\RISET\PROGRAM\RESULT\baselines\imputed_csv"
+# Struktur: {MEAN_MODE_BASE_DIR}/{dataset_name}/mask_{i}/mean_mode_train.csv
+MEAN_MODE_BASE_DIR = PROJECT_ROOT / "baselines" / "imputed_csv"
 
 # Folder tempat file info.json berada (kolom target per dataset)
-INFO_DIR = r"D:\KULIAH\RISET\PROGRAM\RESULT\datasets\info"
+INFO_DIR = PROJECT_ROOT / "datasets" / "info"
 
 # Folder output tempat hasil (excel & txt) akan disimpan
-OUTPUT_DIR = r"D:\KULIAH\RISET\PROGRAM\RESULT\downstream_results"
+OUTPUT_DIR = PROJECT_ROOT / "downstream_results"
 
 # Daftar dataset yang dievaluasi: nama tampilan -> nama folder & nama file info.json
 # "folder"      -> nama folder dataset untuk skenario diffputer & mrmd (di RESULT_BASE_DIR)
