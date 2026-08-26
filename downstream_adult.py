@@ -136,7 +136,7 @@ def path_mean_mode(dataset_cfg, mask_idx):
 SCENARIOS = {
     "diffputer": path_diffputer,   # proposed method
     # "mrmd": path_mrmd,             # baseline 1
-    # "mean_mode": path_mean_mode,   # baseline 2
+    "mean_mode": path_mean_mode,   # baseline 2
 }
 
 # Jumlah mask/repetisi (mask_0 ... mask_9 -> index 0-9)
