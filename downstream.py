@@ -82,7 +82,10 @@ RESULT_BASE_DIR = PROJECT_ROOT
 MEAN_MODE_BASE_DIR = PROJECT_ROOT / "baselines" / "imputed_csv"
 
 # Folder tempat file info.json berada (kolom target per dataset)
-INFO_DIR = PROJECT_ROOT / "datasets" / "info"
+# CATATAN: nama folder ini CASE-SENSITIVE di Linux/Kaggle (beda dengan
+# Windows yang tidak case-sensitive). Sesuaikan persis huruf besar/kecilnya
+# dengan nama folder asli di komputer/environment kamu.
+INFO_DIR = PROJECT_ROOT / "datasets" / "Info"
 
 # Folder output tempat hasil (excel & txt) akan disimpan
 OUTPUT_DIR = PROJECT_ROOT / "downstream_results"
