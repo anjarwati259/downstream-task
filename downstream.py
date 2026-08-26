@@ -94,11 +94,11 @@ OUTPUT_DIR = PROJECT_ROOT / "downstream_results"
 # "folder"      -> nama folder dataset untuk skenario diffputer & mrmd (di RESULT_BASE_DIR)
 # "mean_mode_folder" -> nama folder dataset untuk skenario mean_mode (di MEAN_MODE_BASE_DIR)
 DATASETS = {
-    "adult": {
-        "folder": "ADULT",
-        "mean_mode_folder": "adult",
-        "info_json": os.path.join(INFO_DIR, "adult.json"),
-    },
+    # "adult": {
+    #     "folder": "ADULT",
+    #     "mean_mode_folder": "adult",
+    #     "info_json": os.path.join(INFO_DIR, "adult.json"),
+    # },
     "shoppers": {
         "folder": "SHOPPERS",
         "mean_mode_folder": "shoppers",
@@ -135,8 +135,8 @@ def path_mean_mode(dataset_cfg, mask_idx):
 # karena struktur foldernya berbeda-beda (bukan cuma beda nama file).
 SCENARIOS = {
     "diffputer": path_diffputer,   # proposed method
-    "mrmd": path_mrmd,             # baseline 1
-    "mean_mode": path_mean_mode,   # baseline 2
+    # "mrmd": path_mrmd,             # baseline 1
+    # "mean_mode": path_mean_mode,   # baseline 2
 }
 
 # Jumlah mask/repetisi (mask_0 ... mask_9 -> index 0-9)
