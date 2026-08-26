@@ -1,0 +1,31 @@
+iteration 0, MAE: in-sample: 0.535050094127655, out-of-sample: 0.5279985666275024 
+iteration 0: RMSE: in-sample: 0.9695742130279541, out-of-sample: 0.9523009061813354 
+iteration 0: ACC: in-sample: 0.5179198098869823, out-of-sample: 0.5226965423990728 
+iteration 0: Training time: 498.57s, In-sample imputation time: 445.63s, Out-of-sample imputation time: 200.16s 
+
+iteration 1, MAE: in-sample: 0.5000979900360107, out-of-sample: 0.4951540231704712 
+iteration 1: RMSE: in-sample: 0.9309539794921875, out-of-sample: 0.9159440994262695 
+iteration 1: ACC: in-sample: 0.5251595788775595, out-of-sample: 0.5328053570278797 
+iteration 1: Training time: 626.87s, In-sample imputation time: 445.07s, Out-of-sample imputation time: 199.72s 
+
+iteration 2, MAE: in-sample: 0.48979616165161133, out-of-sample: 0.4882088899612427 
+iteration 2: RMSE: in-sample: 0.9228851199150085, out-of-sample: 0.9128314256668091 
+iteration 2: ACC: in-sample: 0.5283373400757136, out-of-sample: 0.5402742901294186 
+iteration 2: Training time: 570.25s, In-sample imputation time: 444.98s, Out-of-sample imputation time: 200.00s 
+
+iteration 3, MAE: in-sample: 0.4842241108417511, out-of-sample: 0.483142614364624 
+iteration 3: RMSE: in-sample: 0.9242787957191467, out-of-sample: 0.9147734045982361 
+iteration 3: ACC: in-sample: 0.5213462654397745, out-of-sample: 0.5308093490438478 
+iteration 3: Training time: 571.27s, In-sample imputation time: 444.93s, Out-of-sample imputation time: 200.13s 
+
+iteration 4, MAE: in-sample: 0.4800024926662445, out-of-sample: 0.48413074016571045 
+iteration 4: RMSE: in-sample: 0.9256981611251831, out-of-sample: 0.9203935861587524 
+iteration 4: ACC: in-sample: 0.5193014451905275, out-of-sample: 0.5259159101152534 
+iteration 4: Training time: 628.10s, In-sample imputation time: 445.91s, Out-of-sample imputation time: 200.76s 
+
+
+[RESMI - iterasi terakhir 4] MAE: 0.48413074016571045, RMSE: 0.9203935861587524, ACC: 0.5259159101152534 
+[TERPILIH - iterasi 2, hanya untuk penyimpanan CSV] MAE: 0.4882088899612427, RMSE: 0.9128314256668091, ACC: 0.5402742901294186 
+[CSV] Hasil imputasi TEST  (iterasi 2) disimpan di: results/shoppers/rate60/MCAR/7/10_50/imputed_csv/test_impute_iter2.csv 
+[CSV] Hasil imputasi TRAIN (iterasi 2) disimpan di: results/shoppers/rate60/MCAR/7/10_50/imputed_csv/train_impute_iter2.csv 
+
