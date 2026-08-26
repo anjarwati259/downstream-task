@@ -1,0 +1,974 @@
+======================================================================
+LOG DOWNSTREAM TASK CLASSIFICATION
+Dijalankan pada: 2026-08-26 10:27:37
+======================================================================
+
+======================================================================
+DATASET: adult | SKENARIO: mrmd | MASK: 0
+======================================================================
+Shape X_train: (22792, 14), X_test: (9769, 14)
+Kelas target (encoded): ['<=50K', '>50K'] -> [0, 1]
+
+----------------------------------------
+Model: LogisticRegression
+----------------------------------------
+CV (Training Set):
+  accuracy  : 0.8061 (+/- 0.0059)
+  precision : 0.6759 (+/- 0.0260)
+  recall    : 0.3839 (+/- 0.0089)
+  f1        : 0.4895 (+/- 0.0117)
+  roc_auc   : 0.8222 (+/- 0.0068)
+Test Set:
+  accuracy  : 0.8111
+  precision : 0.6669
+  recall    : 0.4104
+  f1        : 0.5081
+  roc_auc   : 0.8348
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.94      0.88      7447
+           1       0.67      0.41      0.51      2322
+
+    accuracy                           0.81      9769
+   macro avg       0.75      0.67      0.70      9769
+weighted avg       0.80      0.81      0.79      9769
+
+Confusion Matrix:
+[[6971  476]
+ [1369  953]]
+
+----------------------------------------
+Model: SVM
+----------------------------------------
+CV (Training Set):
+  accuracy  : 0.8195 (+/- 0.0056)
+  precision : 0.7285 (+/- 0.0224)
+  recall    : 0.4061 (+/- 0.0134)
+  f1        : 0.5214 (+/- 0.0152)
+  roc_auc   : 0.8368 (+/- 0.0039)
+Test Set:
+  accuracy  : 0.8287
+  precision : 0.7255
+  recall    : 0.4496
+  f1        : 0.5552
+  roc_auc   : 0.8524
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.85      0.95      0.89      7447
+           1       0.73      0.45      0.56      2322
+
+    accuracy                           0.83      9769
+   macro avg       0.79      0.70      0.72      9769
+weighted avg       0.82      0.83      0.81      9769
+
+Confusion Matrix:
+[[7052  395]
+ [1278 1044]]
+
+----------------------------------------
+Model: XGBoost
+----------------------------------------
+CV (Training Set):
+  accuracy  : 0.8252 (+/- 0.0047)
+  precision : 0.6832 (+/- 0.0131)
+  recall    : 0.5189 (+/- 0.0154)
+  f1        : 0.5897 (+/- 0.0126)
+  roc_auc   : 0.8644 (+/- 0.0026)
+Test Set:
+  accuracy  : 0.8318
+  precision : 0.6784
+  recall    : 0.5560
+  f1        : 0.6111
+  roc_auc   : 0.8777
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.87      0.92      0.89      7447
+           1       0.68      0.56      0.61      2322
+
+    accuracy                           0.83      9769
+   macro avg       0.77      0.74      0.75      9769
+weighted avg       0.82      0.83      0.83      9769
+
+Confusion Matrix:
+[[6835  612]
+ [1031 1291]]
+
+======================================================================
+DATASET: adult | SKENARIO: mrmd | MASK: 1
+======================================================================
+Shape X_train: (22792, 14), X_test: (9769, 14)
+Kelas target (encoded): ['<=50K', '>50K'] -> [0, 1]
+
+----------------------------------------
+Model: LogisticRegression
+----------------------------------------
+CV (Training Set):
+  accuracy  : 0.8134 (+/- 0.0051)
+  precision : 0.7089 (+/- 0.0220)
+  recall    : 0.3903 (+/- 0.0168)
+  f1        : 0.5031 (+/- 0.0160)
+  roc_auc   : 0.8236 (+/- 0.0038)
+Test Set:
+  accuracy  : 0.8150
+  precision : 0.6846
+  recall    : 0.4113
+  f1        : 0.5139
+  roc_auc   : 0.8306
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.94      0.89      7447
+           1       0.68      0.41      0.51      2322
+
+    accuracy                           0.82      9769
+   macro avg       0.76      0.68      0.70      9769
+weighted avg       0.80      0.82      0.80      9769
+
+Confusion Matrix:
+[[7007  440]
+ [1367  955]]
+
+----------------------------------------
+Model: SVM
+----------------------------------------
+CV (Training Set):
+  accuracy  : 0.8270 (+/- 0.0049)
+  precision : 0.7494 (+/- 0.0178)
+  recall    : 0.4291 (+/- 0.0131)
+  f1        : 0.5456 (+/- 0.0141)
+  roc_auc   : 0.8329 (+/- 0.0065)
+Test Set:
+  accuracy  : 0.8332
+  precision : 0.7432
+  recall    : 0.4561
+  f1        : 0.5653
+  roc_auc   : 0.8435
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.85      0.95      0.90      7447
+           1       0.74      0.46      0.57      2322
+
+    accuracy                           0.83      9769
+   macro avg       0.80      0.70      0.73      9769
+weighted avg       0.82      0.83      0.82      9769
+
+Confusion Matrix:
+[[7081  366]
+ [1263 1059]]
+
+----------------------------------------
+Model: XGBoost
+----------------------------------------
+CV (Training Set):
+  accuracy  : 0.8352 (+/- 0.0022)
+  precision : 0.7044 (+/- 0.0090)
+  recall    : 0.5510 (+/- 0.0171)
+  f1        : 0.6181 (+/- 0.0090)
+  roc_auc   : 0.8738 (+/- 0.0043)
+Test Set:
+  accuracy  : 0.8340
+  precision : 0.6858
+  recall    : 0.5564
+  f1        : 0.6144
+  roc_auc   : 0.8803
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.87      0.92      0.89      7447
+           1       0.69      0.56      0.61      2322
+
+    accuracy                           0.83      9769
+   macro avg       0.78      0.74      0.75      9769
+weighted avg       0.83      0.83      0.83      9769
+
+Confusion Matrix:
+[[6855  592]
+ [1030 1292]]
+
+======================================================================
+DATASET: adult | SKENARIO: mrmd | MASK: 2
+======================================================================
+Shape X_train: (22792, 14), X_test: (9769, 14)
+Kelas target (encoded): ['<=50K', '>50K'] -> [0, 1]
+
+----------------------------------------
+Model: LogisticRegression
+----------------------------------------
+CV (Training Set):
+  accuracy  : 0.8098 (+/- 0.0036)
+  precision : 0.6917 (+/- 0.0154)
+  recall    : 0.3874 (+/- 0.0114)
+  f1        : 0.4965 (+/- 0.0107)
+  roc_auc   : 0.8174 (+/- 0.0038)
+Test Set:
+  accuracy  : 0.8169
+  precision : 0.6883
+  recall    : 0.4195
+  f1        : 0.5213
+  roc_auc   : 0.8295
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.94      0.89      7447
+           1       0.69      0.42      0.52      2322
+
+    accuracy                           0.82      9769
+   macro avg       0.76      0.68      0.70      9769
+weighted avg       0.80      0.82      0.80      9769
+
+Confusion Matrix:
+[[7006  441]
+ [1348  974]]
+
+----------------------------------------
+Model: SVM
+----------------------------------------
+CV (Training Set):
+  accuracy  : 0.8187 (+/- 0.0059)
+  precision : 0.7379 (+/- 0.0254)
+  recall    : 0.3901 (+/- 0.0139)
+  f1        : 0.5103 (+/- 0.0161)
+  roc_auc   : 0.8291 (+/- 0.0040)
+Test Set:
+  accuracy  : 0.8295
+  precision : 0.7426
+  recall    : 0.4324
+  f1        : 0.5465
+  roc_auc   : 0.8386
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.95      0.89      7447
+           1       0.74      0.43      0.55      2322
+
+    accuracy                           0.83      9769
+   macro avg       0.79      0.69      0.72      9769
+weighted avg       0.82      0.83      0.81      9769
+
+Confusion Matrix:
+[[7099  348]
+ [1318 1004]]
+
+----------------------------------------
+Model: XGBoost
+----------------------------------------
+CV (Training Set):
+  accuracy  : 0.8289 (+/- 0.0027)
+  precision : 0.6922 (+/- 0.0126)
+  recall    : 0.5293 (+/- 0.0082)
+  f1        : 0.5997 (+/- 0.0040)
+  roc_auc   : 0.8686 (+/- 0.0021)
+Test Set:
+  accuracy  : 0.8367
+  precision : 0.6873
+  recall    : 0.5745
+  f1        : 0.6259
+  roc_auc   : 0.8819
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.87      0.92      0.90      7447
+           1       0.69      0.57      0.63      2322
+
+    accuracy                           0.84      9769
+   macro avg       0.78      0.75      0.76      9769
+weighted avg       0.83      0.84      0.83      9769
+
+Confusion Matrix:
+[[6840  607]
+ [ 988 1334]]
+
+======================================================================
+DATASET: adult | SKENARIO: mrmd | MASK: 3
+======================================================================
+Shape X_train: (22792, 14), X_test: (9769, 14)
+Kelas target (encoded): ['<=50K', '>50K'] -> [0, 1]
+
+----------------------------------------
+Model: LogisticRegression
+----------------------------------------
+CV (Training Set):
+  accuracy  : 0.8099 (+/- 0.0045)
+  precision : 0.6851 (+/- 0.0209)
+  recall    : 0.3990 (+/- 0.0078)
+  f1        : 0.5041 (+/- 0.0087)
+  roc_auc   : 0.8264 (+/- 0.0031)
+Test Set:
+  accuracy  : 0.8210
+  precision : 0.6935
+  recall    : 0.4423
+  f1        : 0.5401
+  roc_auc   : 0.8364
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.94      0.89      7447
+           1       0.69      0.44      0.54      2322
+
+    accuracy                           0.82      9769
+   macro avg       0.77      0.69      0.71      9769
+weighted avg       0.81      0.82      0.81      9769
+
+Confusion Matrix:
+[[6993  454]
+ [1295 1027]]
+
+----------------------------------------
+Model: SVM
+----------------------------------------
+CV (Training Set):
+  accuracy  : 0.8203 (+/- 0.0049)
+  precision : 0.7248 (+/- 0.0171)
+  recall    : 0.4160 (+/- 0.0119)
+  f1        : 0.5286 (+/- 0.0135)
+  roc_auc   : 0.8415 (+/- 0.0057)
+Test Set:
+  accuracy  : 0.8309
+  precision : 0.7320
+  recall    : 0.4552
+  f1        : 0.5613
+  roc_auc   : 0.8474
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.85      0.95      0.90      7447
+           1       0.73      0.46      0.56      2322
+
+    accuracy                           0.83      9769
+   macro avg       0.79      0.70      0.73      9769
+weighted avg       0.82      0.83      0.82      9769
+
+Confusion Matrix:
+[[7060  387]
+ [1265 1057]]
+
+----------------------------------------
+Model: XGBoost
+----------------------------------------
+CV (Training Set):
+  accuracy  : 0.8302 (+/- 0.0050)
+  precision : 0.6878 (+/- 0.0145)
+  recall    : 0.5477 (+/- 0.0083)
+  f1        : 0.6098 (+/- 0.0102)
+  roc_auc   : 0.8739 (+/- 0.0043)
+Test Set:
+  accuracy  : 0.8366
+  precision : 0.6867
+  recall    : 0.5749
+  f1        : 0.6259
+  roc_auc   : 0.8842
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.87      0.92      0.90      7447
+           1       0.69      0.57      0.63      2322
+
+    accuracy                           0.84      9769
+   macro avg       0.78      0.75      0.76      9769
+weighted avg       0.83      0.84      0.83      9769
+
+Confusion Matrix:
+[[6838  609]
+ [ 987 1335]]
+
+======================================================================
+DATASET: adult | SKENARIO: mrmd | MASK: 4
+======================================================================
+Shape X_train: (22792, 14), X_test: (9769, 14)
+Kelas target (encoded): ['<=50K', '>50K'] -> [0, 1]
+
+----------------------------------------
+Model: LogisticRegression
+----------------------------------------
+CV (Training Set):
+  accuracy  : 0.8107 (+/- 0.0022)
+  precision : 0.7039 (+/- 0.0124)
+  recall    : 0.3769 (+/- 0.0024)
+  f1        : 0.4909 (+/- 0.0034)
+  roc_auc   : 0.8219 (+/- 0.0075)
+Test Set:
+  accuracy  : 0.8185
+  precision : 0.7065
+  recall    : 0.4044
+  f1        : 0.5144
+  roc_auc   : 0.8326
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.95      0.89      7447
+           1       0.71      0.40      0.51      2322
+
+    accuracy                           0.82      9769
+   macro avg       0.77      0.68      0.70      9769
+weighted avg       0.81      0.82      0.80      9769
+
+Confusion Matrix:
+[[7057  390]
+ [1383  939]]
+
+----------------------------------------
+Model: SVM
+----------------------------------------
+CV (Training Set):
+  accuracy  : 0.8195 (+/- 0.0032)
+  precision : 0.7540 (+/- 0.0167)
+  recall    : 0.3781 (+/- 0.0057)
+  f1        : 0.5036 (+/- 0.0074)
+  roc_auc   : 0.8231 (+/- 0.0068)
+Test Set:
+  accuracy  : 0.8285
+  precision : 0.7641
+  recall    : 0.4031
+  f1        : 0.5278
+  roc_auc   : 0.8341
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.96      0.90      7447
+           1       0.76      0.40      0.53      2322
+
+    accuracy                           0.83      9769
+   macro avg       0.80      0.68      0.71      9769
+weighted avg       0.82      0.83      0.81      9769
+
+Confusion Matrix:
+[[7158  289]
+ [1386  936]]
+
+----------------------------------------
+Model: XGBoost
+----------------------------------------
+CV (Training Set):
+  accuracy  : 0.8301 (+/- 0.0032)
+  precision : 0.6975 (+/- 0.0085)
+  recall    : 0.5269 (+/- 0.0094)
+  f1        : 0.6003 (+/- 0.0084)
+  roc_auc   : 0.8693 (+/- 0.0038)
+Test Set:
+  accuracy  : 0.8387
+  precision : 0.7027
+  recall    : 0.5568
+  f1        : 0.6213
+  roc_auc   : 0.8844
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.87      0.93      0.90      7447
+           1       0.70      0.56      0.62      2322
+
+    accuracy                           0.84      9769
+   macro avg       0.79      0.74      0.76      9769
+weighted avg       0.83      0.84      0.83      9769
+
+Confusion Matrix:
+[[6900  547]
+ [1029 1293]]
+
+======================================================================
+DATASET: adult | SKENARIO: mrmd | MASK: 5
+======================================================================
+Shape X_train: (22792, 14), X_test: (9769, 14)
+Kelas target (encoded): ['<=50K', '>50K'] -> [0, 1]
+
+----------------------------------------
+Model: LogisticRegression
+----------------------------------------
+CV (Training Set):
+  accuracy  : 0.8132 (+/- 0.0059)
+  precision : 0.7094 (+/- 0.0238)
+  recall    : 0.3877 (+/- 0.0130)
+  f1        : 0.5013 (+/- 0.0155)
+  roc_auc   : 0.8262 (+/- 0.0065)
+Test Set:
+  accuracy  : 0.8178
+  precision : 0.6882
+  recall    : 0.4268
+  f1        : 0.5268
+  roc_auc   : 0.8406
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.94      0.89      7447
+           1       0.69      0.43      0.53      2322
+
+    accuracy                           0.82      9769
+   macro avg       0.76      0.68      0.71      9769
+weighted avg       0.80      0.82      0.80      9769
+
+Confusion Matrix:
+[[6998  449]
+ [1331  991]]
+
+----------------------------------------
+Model: SVM
+----------------------------------------
+CV (Training Set):
+  accuracy  : 0.8232 (+/- 0.0044)
+  precision : 0.7481 (+/- 0.0158)
+  recall    : 0.4068 (+/- 0.0137)
+  f1        : 0.5269 (+/- 0.0141)
+  roc_auc   : 0.8247 (+/- 0.0028)
+Test Set:
+  accuracy  : 0.8306
+  precision : 0.7401
+  recall    : 0.4427
+  f1        : 0.5540
+  roc_auc   : 0.8467
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.85      0.95      0.90      7447
+           1       0.74      0.44      0.55      2322
+
+    accuracy                           0.83      9769
+   macro avg       0.79      0.70      0.72      9769
+weighted avg       0.82      0.83      0.81      9769
+
+Confusion Matrix:
+[[7086  361]
+ [1294 1028]]
+
+----------------------------------------
+Model: XGBoost
+----------------------------------------
+CV (Training Set):
+  accuracy  : 0.8259 (+/- 0.0050)
+  precision : 0.6911 (+/- 0.0180)
+  recall    : 0.5093 (+/- 0.0080)
+  f1        : 0.5863 (+/- 0.0090)
+  roc_auc   : 0.8653 (+/- 0.0051)
+Test Set:
+  accuracy  : 0.8366
+  precision : 0.6981
+  recall    : 0.5508
+  f1        : 0.6158
+  roc_auc   : 0.8865
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.87      0.93      0.90      7447
+           1       0.70      0.55      0.62      2322
+
+    accuracy                           0.84      9769
+   macro avg       0.78      0.74      0.76      9769
+weighted avg       0.83      0.84      0.83      9769
+
+Confusion Matrix:
+[[6894  553]
+ [1043 1279]]
+
+======================================================================
+DATASET: adult | SKENARIO: mrmd | MASK: 6
+======================================================================
+Shape X_train: (22792, 14), X_test: (9769, 14)
+Kelas target (encoded): ['<=50K', '>50K'] -> [0, 1]
+
+----------------------------------------
+Model: LogisticRegression
+----------------------------------------
+CV (Training Set):
+  accuracy  : 0.8141 (+/- 0.0047)
+  precision : 0.7123 (+/- 0.0271)
+  recall    : 0.3916 (+/- 0.0058)
+  f1        : 0.5051 (+/- 0.0064)
+  roc_auc   : 0.8229 (+/- 0.0073)
+Test Set:
+  accuracy  : 0.8245
+  precision : 0.7209
+  recall    : 0.4272
+  f1        : 0.5365
+  roc_auc   : 0.8310
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.95      0.89      7447
+           1       0.72      0.43      0.54      2322
+
+    accuracy                           0.82      9769
+   macro avg       0.78      0.69      0.71      9769
+weighted avg       0.81      0.82      0.81      9769
+
+Confusion Matrix:
+[[7063  384]
+ [1330  992]]
+
+----------------------------------------
+Model: SVM
+----------------------------------------
+CV (Training Set):
+  accuracy  : 0.8240 (+/- 0.0058)
+  precision : 0.7535 (+/- 0.0288)
+  recall    : 0.4066 (+/- 0.0074)
+  f1        : 0.5281 (+/- 0.0122)
+  roc_auc   : 0.8357 (+/- 0.0062)
+Test Set:
+  accuracy  : 0.8322
+  precision : 0.7554
+  recall    : 0.4350
+  f1        : 0.5521
+  roc_auc   : 0.8479
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.96      0.90      7447
+           1       0.76      0.43      0.55      2322
+
+    accuracy                           0.83      9769
+   macro avg       0.80      0.70      0.72      9769
+weighted avg       0.82      0.83      0.81      9769
+
+Confusion Matrix:
+[[7120  327]
+ [1312 1010]]
+
+----------------------------------------
+Model: XGBoost
+----------------------------------------
+CV (Training Set):
+  accuracy  : 0.8286 (+/- 0.0029)
+  precision : 0.6911 (+/- 0.0113)
+  recall    : 0.5289 (+/- 0.0042)
+  f1        : 0.5992 (+/- 0.0046)
+  roc_auc   : 0.8698 (+/- 0.0031)
+Test Set:
+  accuracy  : 0.8342
+  precision : 0.6899
+  recall    : 0.5491
+  f1        : 0.6115
+  roc_auc   : 0.8762
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.87      0.92      0.89      7447
+           1       0.69      0.55      0.61      2322
+
+    accuracy                           0.83      9769
+   macro avg       0.78      0.74      0.75      9769
+weighted avg       0.83      0.83      0.83      9769
+
+Confusion Matrix:
+[[6874  573]
+ [1047 1275]]
+
+======================================================================
+DATASET: adult | SKENARIO: mrmd | MASK: 7
+======================================================================
+Shape X_train: (22792, 14), X_test: (9769, 14)
+Kelas target (encoded): ['<=50K', '>50K'] -> [0, 1]
+
+----------------------------------------
+Model: LogisticRegression
+----------------------------------------
+CV (Training Set):
+  accuracy  : 0.8116 (+/- 0.0055)
+  precision : 0.6971 (+/- 0.0209)
+  recall    : 0.3932 (+/- 0.0143)
+  f1        : 0.5027 (+/- 0.0154)
+  roc_auc   : 0.8241 (+/- 0.0071)
+Test Set:
+  accuracy  : 0.8157
+  precision : 0.6848
+  recall    : 0.4165
+  f1        : 0.5179
+  roc_auc   : 0.8328
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.94      0.89      7447
+           1       0.68      0.42      0.52      2322
+
+    accuracy                           0.82      9769
+   macro avg       0.76      0.68      0.70      9769
+weighted avg       0.80      0.82      0.80      9769
+
+Confusion Matrix:
+[[7002  445]
+ [1355  967]]
+
+----------------------------------------
+Model: SVM
+----------------------------------------
+CV (Training Set):
+  accuracy  : 0.8252 (+/- 0.0067)
+  precision : 0.7480 (+/- 0.0220)
+  recall    : 0.4195 (+/- 0.0218)
+  f1        : 0.5373 (+/- 0.0214)
+  roc_auc   : 0.8430 (+/- 0.0071)
+Test Set:
+  accuracy  : 0.8287
+  precision : 0.7303
+  recall    : 0.4432
+  f1        : 0.5516
+  roc_auc   : 0.8524
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.85      0.95      0.89      7447
+           1       0.73      0.44      0.55      2322
+
+    accuracy                           0.83      9769
+   macro avg       0.79      0.70      0.72      9769
+weighted avg       0.82      0.83      0.81      9769
+
+Confusion Matrix:
+[[7067  380]
+ [1293 1029]]
+
+----------------------------------------
+Model: XGBoost
+----------------------------------------
+CV (Training Set):
+  accuracy  : 0.8290 (+/- 0.0049)
+  precision : 0.6874 (+/- 0.0162)
+  recall    : 0.5394 (+/- 0.0120)
+  f1        : 0.6043 (+/- 0.0104)
+  roc_auc   : 0.8720 (+/- 0.0048)
+Test Set:
+  accuracy  : 0.8342
+  precision : 0.6865
+  recall    : 0.5564
+  f1        : 0.6147
+  roc_auc   : 0.8797
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.87      0.92      0.89      7447
+           1       0.69      0.56      0.61      2322
+
+    accuracy                           0.83      9769
+   macro avg       0.78      0.74      0.75      9769
+weighted avg       0.83      0.83      0.83      9769
+
+Confusion Matrix:
+[[6857  590]
+ [1030 1292]]
+
+======================================================================
+DATASET: adult | SKENARIO: mrmd | MASK: 8
+======================================================================
+Shape X_train: (22792, 14), X_test: (9769, 14)
+Kelas target (encoded): ['<=50K', '>50K'] -> [0, 1]
+
+----------------------------------------
+Model: LogisticRegression
+----------------------------------------
+CV (Training Set):
+  accuracy  : 0.8153 (+/- 0.0039)
+  precision : 0.7139 (+/- 0.0157)
+  recall    : 0.3963 (+/- 0.0108)
+  f1        : 0.5096 (+/- 0.0114)
+  roc_auc   : 0.8273 (+/- 0.0068)
+Test Set:
+  accuracy  : 0.8191
+  precision : 0.7033
+  recall    : 0.4134
+  f1        : 0.5207
+  roc_auc   : 0.8360
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.95      0.89      7447
+           1       0.70      0.41      0.52      2322
+
+    accuracy                           0.82      9769
+   macro avg       0.77      0.68      0.70      9769
+weighted avg       0.81      0.82      0.80      9769
+
+Confusion Matrix:
+[[7042  405]
+ [1362  960]]
+
+----------------------------------------
+Model: SVM
+----------------------------------------
+CV (Training Set):
+  accuracy  : 0.8249 (+/- 0.0041)
+  precision : 0.7672 (+/- 0.0211)
+  recall    : 0.3983 (+/- 0.0129)
+  f1        : 0.5241 (+/- 0.0123)
+  roc_auc   : 0.8286 (+/- 0.0070)
+Test Set:
+  accuracy  : 0.8285
+  precision : 0.7582
+  recall    : 0.4091
+  f1        : 0.5315
+  roc_auc   : 0.8401
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.96      0.90      7447
+           1       0.76      0.41      0.53      2322
+
+    accuracy                           0.83      9769
+   macro avg       0.80      0.68      0.71      9769
+weighted avg       0.82      0.83      0.81      9769
+
+Confusion Matrix:
+[[7144  303]
+ [1372  950]]
+
+----------------------------------------
+Model: XGBoost
+----------------------------------------
+CV (Training Set):
+  accuracy  : 0.8285 (+/- 0.0031)
+  precision : 0.6982 (+/- 0.0117)
+  recall    : 0.5146 (+/- 0.0102)
+  f1        : 0.5924 (+/- 0.0074)
+  roc_auc   : 0.8649 (+/- 0.0045)
+Test Set:
+  accuracy  : 0.8314
+  precision : 0.6821
+  recall    : 0.5444
+  f1        : 0.6055
+  roc_auc   : 0.8788
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.87      0.92      0.89      7447
+           1       0.68      0.54      0.61      2322
+
+    accuracy                           0.83      9769
+   macro avg       0.77      0.73      0.75      9769
+weighted avg       0.82      0.83      0.82      9769
+
+Confusion Matrix:
+[[6858  589]
+ [1058 1264]]
+
+======================================================================
+DATASET: adult | SKENARIO: mrmd | MASK: 9
+======================================================================
+Shape X_train: (22792, 14), X_test: (9769, 14)
+Kelas target (encoded): ['<=50K', '>50K'] -> [0, 1]
+
+----------------------------------------
+Model: LogisticRegression
+----------------------------------------
+CV (Training Set):
+  accuracy  : 0.8091 (+/- 0.0029)
+  precision : 0.6892 (+/- 0.0143)
+  recall    : 0.3863 (+/- 0.0098)
+  f1        : 0.4950 (+/- 0.0085)
+  roc_auc   : 0.8258 (+/- 0.0039)
+Test Set:
+  accuracy  : 0.8174
+  precision : 0.6924
+  recall    : 0.4169
+  f1        : 0.5204
+  roc_auc   : 0.8371
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.94      0.89      7447
+           1       0.69      0.42      0.52      2322
+
+    accuracy                           0.82      9769
+   macro avg       0.77      0.68      0.70      9769
+weighted avg       0.80      0.82      0.80      9769
+
+Confusion Matrix:
+[[7017  430]
+ [1354  968]]
+
+----------------------------------------
+Model: SVM
+----------------------------------------
+CV (Training Set):
+  accuracy  : 0.8188 (+/- 0.0042)
+  precision : 0.7433 (+/- 0.0177)
+  recall    : 0.3843 (+/- 0.0106)
+  f1        : 0.5066 (+/- 0.0120)
+  roc_auc   : 0.8371 (+/- 0.0034)
+Test Set:
+  accuracy  : 0.8270
+  precision : 0.7398
+  recall    : 0.4199
+  f1        : 0.5357
+  roc_auc   : 0.8450
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.95      0.89      7447
+           1       0.74      0.42      0.54      2322
+
+    accuracy                           0.83      9769
+   macro avg       0.79      0.69      0.71      9769
+weighted avg       0.82      0.83      0.81      9769
+
+Confusion Matrix:
+[[7104  343]
+ [1347  975]]
+
+----------------------------------------
+Model: XGBoost
+----------------------------------------
+CV (Training Set):
+  accuracy  : 0.8283 (+/- 0.0043)
+  precision : 0.6885 (+/- 0.0120)
+  recall    : 0.5316 (+/- 0.0166)
+  f1        : 0.5998 (+/- 0.0126)
+  roc_auc   : 0.8720 (+/- 0.0018)
+Test Set:
+  accuracy  : 0.8366
+  precision : 0.6901
+  recall    : 0.5676
+  f1        : 0.6229
+  roc_auc   : 0.8851
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.87      0.92      0.90      7447
+           1       0.69      0.57      0.62      2322
+
+    accuracy                           0.84      9769
+   macro avg       0.78      0.74      0.76      9769
+weighted avg       0.83      0.84      0.83      9769
+
+Confusion Matrix:
+[[6855  592]
+ [1004 1318]]
+
+[INFO] Hasil Excel disimpan ke: /kaggle/working/downstream-task/downstream_results/hasil_downstream_classification.xlsx
+
+======================================================================
+RINGKASAN AKHIR (rata-rata & std antar mask)
+======================================================================
+dataset scenario         classifier  cv_accuracy_mean_mean  cv_accuracy_mean_std  cv_accuracy_std_mean  cv_accuracy_std_std  cv_precision_mean_mean  cv_precision_mean_std  cv_precision_std_mean  cv_precision_std_std  cv_recall_mean_mean  cv_recall_mean_std  cv_recall_std_mean  cv_recall_std_std  cv_f1_mean_mean  cv_f1_mean_std  cv_f1_std_mean  cv_f1_std_std  cv_roc_auc_mean_mean  cv_roc_auc_mean_std  cv_roc_auc_std_mean  cv_roc_auc_std_std  test_accuracy_mean  test_accuracy_std  test_precision_mean  test_precision_std  test_recall_mean  test_recall_std  test_f1_mean  test_f1_std  test_roc_auc_mean  test_roc_auc_std
+  adult     mrmd LogisticRegression                 0.8113                0.0028                0.0044               0.0013                  0.6987                 0.0129                 0.0198                0.0051               0.3893              0.0063              0.0101             0.0042           0.4998          0.0065          0.0108         0.0042                0.8238               0.0029               0.0057              0.0018              0.8177             0.0036               0.6929              0.0146            0.4189           0.0108        0.5220       0.0100             0.8341            0.0035
+  adult     mrmd                SVM                 0.8221                0.0031                0.0050               0.0010                  0.7455                 0.0125                 0.0205                0.0042               0.4035              0.0160              0.0124             0.0043           0.5232          0.0133          0.0138         0.0036                0.8332               0.0068               0.0053              0.0016              0.8298             0.0019               0.7431              0.0126            0.4346           0.0186        0.5481       0.0126             0.8448            0.0059
+  adult     mrmd            XGBoost                 0.8290                0.0027                0.0038               0.0011                  0.6921                 0.0063                 0.0127                0.0030               0.5298              0.0135              0.0109             0.0042           0.6000          0.0094          0.0088         0.0029                0.8694               0.0036               0.0036              0.0012              0.8351             0.0023               0.6888              0.0071            0.5587           0.0104        0.6169       0.0069             0.8815            0.0035
